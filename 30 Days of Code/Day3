@@ -1,0 +1,19 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
+
+#include<stdio.h>
+int main()
+{
+    long long n;
+    scanf("%lld",&n);
+    if(n%2==0&&(n>2&&n<5))
+    printf("Not Weird");
+    else if (n%2==0&&(n>20))
+    {
+        printf("Not Weird");
+    }
+    else  
+    printf("Weird");
+    return 0;
+}
