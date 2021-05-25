@@ -1,0 +1,20 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
+
+C code :
+
+#include<stdio.h>
+int main()
+{
+    int n,i,c;
+    scanf("%d",&n);
+    for(i=1;i<=10;i++)
+    {
+        c=n*i;
+        printf("%d x %d = %d\n",n,i,c);
+
+
+    }
+    return 0;
+}
