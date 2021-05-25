@@ -1,0 +1,28 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
+
+C code :
+
+#include<stdio.h>
+
+long long factorial(long long n)
+{
+   
+    if(n==1)
+    return 1;
+    else 
+    return(n*factorial(n-1));
+}
+
+
+
+
+int main()
+{
+    long long n,p;
+    scanf("%lld",&n);
+    p=factorial(n);
+    printf("%lld",p);
+    return 0;
+}
