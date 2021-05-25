@@ -1,0 +1,30 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
+
+C code :
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    char s[] = "HackerRank ";
+     char str[100];
+     int e;
+     double f;
+     scanf("%d",&e);
+     scanf("%lf",&f);
+     getchar();
+     scanf("%[^\n]%*c", str);
+     printf("%d\n",(i+e));
+     printf("%.1lf\n",(d+f));
+     
+     printf("%s",s);
+ printf("%s",str);
+
+    return 0;
+}
