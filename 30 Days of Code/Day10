@@ -1,0 +1,27 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
+
+
+C code :
+
+#include<stdio.h>
+int main()
+{
+    int n,count=0,max=0;
+    scanf("%d",&n);
+
+    while(n)
+    {
+        if (n&1)
+            count++;
+        else 
+            count = 0;
+        if (max < count)
+            max = count;
+        n>>=1;
+    }
+   printf("%d",max);
+
+    return 0;
+}
