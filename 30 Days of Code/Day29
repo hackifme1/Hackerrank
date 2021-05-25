@@ -1,3 +1,30 @@
 // By Chandramani Kumar
 // Keep moving and must be simple bro!!!!!
 // Espérons le meilleur mais préparez-vous au pire 😎
+
+
+C code :
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int t,n,k,i,j,s,a;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d%d",&n,&k);
+        s=1&2;
+        for(i=1;i<n;i++)
+        {
+            for(j=i+1;j<=n;j++)
+            {
+               a=i&j;
+                 if(a>=s&&a<k)
+                   s=a;
+            }
+        }
+        printf("%d\n",s);
+    }
+    return 0;
+}
