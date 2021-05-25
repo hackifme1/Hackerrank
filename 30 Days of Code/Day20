@@ -1,1 +1,45 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
 
+
+Cpp code :
+
+#include <iostream>
+
+using namespace std;
+
+int bubble_sort( int A[ ], int n ) {
+    int temp,p=0;
+    for(int k = 0; k< n-1; k++) {
+       
+
+        for(int i = 0; i < n-k-1; i++) {
+            if(A[ i ] > A[ i+1] ) {
+                
+                temp = A[ i ];
+                A[ i ] = A[ i+1 ];
+                A[ i + 1] = temp;
+                p++;
+            }
+        }
+    }
+    return p;
+}
+
+int main() {
+int n,i,j;
+cin>>n;
+int a[n];
+for(i=0;i<n;i++)
+{
+    cin>>a[i];
+}
+
+j=bubble_sort(a,n);
+ cout<<"Array is sorted in "<<j<<" swaps."<<endl;
+    cout<<"First Element: "<<a[0]<<endl;
+    cout<<"Last Element: "<<a[n-1]<<endl;
+    return 0;
+}
+   
