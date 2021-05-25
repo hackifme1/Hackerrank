@@ -1,1 +1,23 @@
+// By Chandramani Kumar
+// Keep moving and must be simple bro!!!!!
+// Espérons le meilleur mais préparez-vous au pire 😎
 
+
+C code :
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int day,month,year,day1,month1,year1,diff,mdiff,ydiff,ddiff;
+       scanf("%d%d%d",&day,&month,&year);
+       scanf("%d%d%d",&day1,&month1,&year1);
+       mdiff = month - month1;
+    ddiff = day - day1;
+    ydiff = year - year1;
+diff=(year-year1>0)?10000:(month-month1>0&&ydiff==0)?mdiff*500:(day-day1>0 && ydiff==0)?ddiff*15:0;    
+      printf("%d",diff);
+    return 0;
+}
